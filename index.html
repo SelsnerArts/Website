@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="/css/style_Homepage.css" />
+    <link rel="stylesheet" href="/css/style_NavBar.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selsner Arts</title>
+  </head>
+  <body>
     <header>
-        <h1>Welcome to My Website</h1>
+      <div id="navbar"></div>
+      <!-- Placeholder for nav -->
+
+      <script>
+        fetch("/nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar").innerHTML = data;
+          });
+      </script>
+
+      <video autoplay muted loop class="showreel">
+        <source src="/videos/showreel.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </header>
-    <main>
-        <p>Hello! This is my very first webpage.</p>
-        <button onclick="showMessage()">Click Me</button>
-    </main>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

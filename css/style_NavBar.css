@@ -1,0 +1,108 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  background-color: #070b0b;
+}
+
+nav .logo img {
+  height: 64px; /* Adjust size as needed */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+  margin-left: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #9cc9d0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e6303f;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Aligns the dropdown below the parent link */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #070b0b;
+  padding: 5px 0;
+  list-style: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: fit-content; /* Adjust width to fit content */
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-align: center;
+  z-index: 100; /* Ensures it stays above other elements */
+}
+
+.dropdown-menu li {
+  margin: 10px;
+}
+
+.dropdown-menu li a {
+  padding: 8px 15px;
+  font-size: 1.5rem; /* Smaller font size to fit better */
+  color: #9cc9d0;
+  text-transform: none;
+  display: inline;
+}
+
+.dropdown:hover > a,
+.dropdown:focus-within > a {
+  color: #e6303f; /* Highlight parent link when dropdown is active */
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+/* Fix spacing between dropdown and parent link */
+.dropdown a {
+  display: flex; /* Enables alignment of text and icon */
+  align-items: center; /* Vertically centers items */
+}
+
+.dropdown a i {
+  margin-left: 5px; /* Space between text and icon */
+  font-size: 0.9em;
+  transition: transform 0.2s ease-in-out; /* Smoother transition */
+}
+
+.dropdown:hover a i {
+  transform: rotate(180deg); /* Flip effect */
+}
+
+.Logo {
+  display: flex;
+  align-items: center; /* Vertically center logo and text */
+  justify-content: space-between; /* Space out logo and website name */
+  padding: 0px;
+}
+
+.Logo .logo img {
+  height: 50px; /* Adjust to desired logo size */
+  width: auto;
+}
+
+.Logo .website-name h1 {
+  font-family: Encode Sans Thin, sans-serif;
+  font-size: 2.5rem; /* Adjust text size */
+  text-transform: uppercase;
+  margin: 40px; /* Removes default margin */
+}

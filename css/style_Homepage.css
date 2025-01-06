@@ -1,0 +1,43 @@
+body {
+  font-family: Encode Sans, sans-serif;
+  background-color: #070b0b;
+  color: #ebf1f2;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensures the body uses full height */
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  justify-content: space-between;
+}
+
+header {
+  background-color: #070b0b;
+  padding: 0px;
+  color: #ebf1f2;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header video.showreel {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main {
+  flex: 1; /* Makes the content area flexible to push footer down */
+}

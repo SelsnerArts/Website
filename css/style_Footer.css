@@ -1,0 +1,23 @@
+footer {
+  padding: 40px;
+  background-color: #070b0b;
+  color: #ebf1f2;
+  text-align: center;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+footer .social-links a {
+  color: #9cc9d0;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .social-links a:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  color: #e6303f; /* Highlight on hover, customize to your palette */
+}
