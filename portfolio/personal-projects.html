@@ -8,60 +8,62 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" href="/images/Favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wdth,wght@75..125,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <title>Personal Projects</title>
   </head>
   <body>
-    <div id="navbar"></div>
-    <!-- Placeholder for nav -->
-
-    <script>
-      fetch("/nav.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("navbar").innerHTML = data;
-        });
-    </script>
+    <header>
+      <!-- Navigation Bar -->
+      <nav>
+        <div class="Logo">
+          <div class="logo">
+            <img src="/images/logo_header.png" alt="My Logo" />
+          </div>
+          <div class="website-name">
+            <h1>Selsner Arts</h1>
+          </div>
+        </div>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li class="dropdown">
+            <span class="nav-link"
+              >Portfolio <i class="fa-solid fa-chevron-down"></i
+            ></span>
+            <ul class="dropdown-menu">
+              <li><a href="/portfolio/client-work.html">Client Work</a></li>
+              <li>
+                <a href="/portfolio/personal-projects.html"
+                  >Personal Projects</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
+      <h1>Personal Projects</h1>
       <section class="portfolio">
         <div class="portfolio-grid">
-          <!-- Project 1 -->
+          <!-- Project 6 -->
           <div class="portfolio-item">
-            <a href="/portfolio/personal projects/personalproject_1.html">
-              <img src="/images/project-1.jpg" alt="Project 1" />
+            <a href="/portfolio/personal projects/personalproject_6.html">
+              <img
+                src="/images/Personal_Projects/project-6.png"
+                alt="Lost Heritage"
+              />
               <div class="overlay">
                 <h2>Lost Heritage</h2>
-              </div>
-            </a>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="portfolio-item">
-            <a href="/portfolio/personal projects/personalproject_2.html">
-              <img src="/images/project-2.png" alt="Project 2" />
-              <div class="overlay">
-                <h2>Project 2</h2>
-              </div>
-            </a>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="portfolio-item">
-            <a href="/portfolio/personal projects/personalproject_3.html">
-              <img src="/images/project-3.png" alt="Project 3" />
-              <div class="overlay">
-                <h2>Project 3</h2>
-              </div>
-            </a>
-          </div>
-
-          <!-- Project 4 -->
-          <div class="portfolio-item">
-            <a href="/portfolio/personal projects/personalproject_4.html">
-              <img src="/images/project-4.png" alt="Project 4" />
-              <div class="overlay">
-                <h2>Project 4</h2>
               </div>
             </a>
           </div>
@@ -69,23 +71,106 @@
           <!-- Project 5 -->
           <div class="portfolio-item">
             <a href="/portfolio/personal projects/personalproject_5.html">
-              <img src="/images/project-5.png" alt="Project 5" />
+              <img
+                src="/images/Personal_Projects/project-5.jpeg"
+                alt="Modular European Facade"
+              />
               <div class="overlay">
-                <h2>Project 5</h2>
+                <h2>Modular European Facade</h2>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="portfolio-item">
+            <a href="/portfolio/personal projects/personalproject_4.html">
+              <img
+                src="/images/Personal_Projects/project-4.png"
+                alt="Mist Creeper"
+              />
+              <div class="overlay">
+                <h2>Mist Creeper</h2>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="portfolio-item">
+            <a href="/portfolio/personal projects/personalproject_3.html">
+              <img src="/images/Personal_Projects/project-3.png" alt="Lindon" />
+              <div class="overlay">
+                <h2>Lindon</h2>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="portfolio-item">
+            <a href="/portfolio/personal projects/personalproject_2.html">
+              <img src="/images/Personal_Projects/project-2.png" alt="Broken" />
+              <div class="overlay">
+                <h2>Broken</h2>
+              </div>
+            </a>
+          </div>
+          <!-- Project 1 -->
+          <div class="portfolio-item">
+            <a href="/portfolio/personal projects/personalproject_1.html">
+              <img
+                src="/images/Personal_Projects/project-1.png"
+                alt="Kitsune Forest"
+              />
+              <div class="overlay">
+                <h2>Kitsune Forest</h2>
               </div>
             </a>
           </div>
         </div>
       </section>
     </main>
-    <div id="footer"></div>
-
-    <script>
-      fetch("/footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer").innerHTML = data;
-        });
-    </script>
+    <footer>
+      <div class="footer-container">
+        <div class="social-links">
+          <a
+            href="https://instagram.com/selsner_arts"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://tiktok.com/@selsner_arts"
+            target="_blank"
+            aria-label="TikTok"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a
+            href="https://pinterest.com/SelsnerArts"
+            target="_blank"
+            aria-label="Pinterest"
+          >
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@selsner"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61571482982531"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="/impressum.html" class="footer-link">Impressum</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

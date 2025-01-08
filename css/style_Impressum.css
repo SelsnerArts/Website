@@ -1,0 +1,34 @@
+body {
+  font-family: "Encode Sans", "Arial", sans-serif;
+  background-color: #070b0b;
+  color: #ebf1f2;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensures the body uses full height */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Makes the content area flexible to push footer down */
+  flex-basis: content;
+  width: 600px;
+  align-self: center;
+  padding-bottom: 100px;
+}
+
+h2 {
+  color: #9cc9d0;
+}
+
+p {
+  color: #9cc9d0;
+}

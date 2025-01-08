@@ -1,37 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/css/style_Homepage.css" />
+    <link rel="stylesheet" href="/css/style_Impressum.css" />
     <link rel="stylesheet" href="/css/style_NavBar.css" />
     <link rel="stylesheet" href="/css/style_Footer.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" href="/images/Favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wdth,wght@75..125,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <title>Impressum</title>
   </head>
   <body>
-    <div id="navbar"></div>
-    <!-- Placeholder for nav -->
-
-    <script>
-      fetch("/nav.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("navbar").innerHTML = data;
-        });
-    </script>
-    <main><h1>Impressum</h1></main>
-    <div id="footer"></div>
-
-    <script>
-      fetch("/footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer").innerHTML = data;
-        });
-    </script>
+    <header>
+      <!-- Navigation Bar -->
+      <nav>
+        <div class="Logo">
+          <div class="logo">
+            <img src="/images/logo_header.png" alt="My Logo" />
+          </div>
+          <div class="website-name">
+            <h1>Selsner Arts</h1>
+          </div>
+        </div>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li class="dropdown">
+            <span class="nav-link"
+              >Portfolio <i class="fa-solid fa-chevron-down"></i
+            ></span>
+            <ul class="dropdown-menu">
+              <li><a href="/portfolio/client-work.html">Client Work</a></li>
+              <li>
+                <a href="/portfolio/personal-projects.html"
+                  >Personal Projects</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Impressum</h1>
+      <br />
+      <br />
+      <h2>Informations according to §5 TMG (German Telemedia Act)</h2>
+      <p>
+        Sophie Elsner <br />Johannes-R.-Becher-Str. 56 <br />07546 Gera <br />DE
+        - Germany <br /><br />selsner.office@gmail.com
+      </p>
+      <br />
+      <h2>Sales tax identification number (Ust-IdNr.)</h2>
+      <p>DE449828946</p>
+      <br />
+      <h2>Responsible for content according to § 55 Abs. 2 RStV:</h2>
+      <p>Sophie Elsner</p>
+      <br />
+      <br />
+      <h1>Privacy Policy</h1>
+      <br />
+      <br />
+      <p>
+        We value your privacy and are committed to protecting your personal
+        data. This privacy policy explains how we use any personal information
+        that may be collected when you visit this website. <br />
+        <br />Effective Date: January 08, 2025
+      </p>
+      <br />
+      <h2>Data Controller Information</h2>
+      <p>
+        Sophie Elsner <br />Johannes-R.-Becher-Str. 56 <br />07546 Gera <br />DE
+        - Germany <br /><br />selsner.office@gmail.com
+      </p>
+      <br />
+      <h2>Data Collection and Use</h2>
+      <p>
+        This website does not directly collect personal data from visitors.
+        However, it includes links to third-party platforms and services that
+        may collect data according to their privacy policies. <br />Email Links:
+        Clicking on an email link will open your email client to send us a
+        message. Any personal data you provide in the email will be handled
+        according to your email provider's terms. <br />External Links to Social
+        Media and E-Commerce Platforms: We provide links to third-party
+        platforms including Patreon, Fiverr, and other social networks. These
+        platforms may collect personal data, track user interactions, or use
+        cookies. <br />We are not responsible for the privacy practices or
+        content of external websites.
+      </p>
+      <br />
+      <h2>Cookies and Tracking Technologies</h2>
+      <p>
+        We do not use cookies or other tracking technologies on this website.
+        However, external services linked from this site may use cookies
+        according to their respective policies.
+      </p>
+      <br />
+      <h2>Your Data Protection Rights</h2>
+      <p>
+        Under the GDPR, you have the right to: <br /><br />Access any personal
+        data we may have about you. <br />Request corrections or deletions of
+        your personal data. <br />Object to the processing of your data.
+        <br /><br />To exercise any of these rights, please contact us at
+      </p>
+      <br />
+      <h2>Changes to This Privacy Policy</h2>
+      <p>
+        We may update this privacy policy from time to time. Any updates will be
+        posted on this page with a revised effective date.
+      </p>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="social-links">
+          <a
+            href="https://instagram.com/selsner_arts"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://tiktok.com/@selsner_arts"
+            target="_blank"
+            aria-label="TikTok"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a
+            href="https://pinterest.com/SelsnerArts"
+            target="_blank"
+            aria-label="Pinterest"
+          >
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@selsner"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61571482982531"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

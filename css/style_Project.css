@@ -6,44 +6,54 @@ body {
   margin: 0;
   padding: 0;
 }
-
+/* * {
+  border: 1px solid red;
+} */
 html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%; /* Ensures the body uses full height */
+  min-height: 100vh; /* Ensures the body uses full height */
   display: flex;
   flex-direction: column;
 }
 
-header {
-  background-color: #070b0b;
-  padding: 0px;
-  color: #ebf1f2;
-}
-
-header {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
 main {
   flex: 1; /* Makes the content area flexible to push footer down */
+  container-type: inline-size;
+  min-inline-size: 100vw;
+  max-inline-size: 1500px;
+  align-self: center;
+  align-content: center;
 }
 
-.project-video iframe {
-  width: 720px;
-  height: 480px;
+.project-details iframe {
+  /* min-height: 720px; */
+  /* min-width: 1080px; */
+  width: 50vw;
+  aspect-ratio: 16 / 9;
+  /* max-height: 720px; */
+  max-height: 1080px;
+  border-radius: 8px; /* Optional, for rounded corners */
+  margin: 20px 0; /* Spacing around the video */
+}
+
+.project-details video {
+  max-width: 1080px;
+  max-height: 720px;
+  width: auto;
+  height: auto;
   border-radius: 8px; /* Optional, for rounded corners */
   margin: 20px 0; /* Spacing around the video */
 }
 
 .project-details {
   display: flex;
-  justify-content: space-evenly; /* Space between image and text */
+  gap: 40px;
+  width: fit-content;
+  justify-self: center;
   align-items: center;
-  padding: 10px 0; /* Add larger gap on the sides (adjust this value as needed) */
+  padding: 40px 0; /* Add larger gap on the sides (adjust this value as needed) */
 }
 
 .project-image img {
@@ -61,19 +71,19 @@ main {
 .project-title {
   font-size: 2em;
   margin-bottom: 10px;
-  color: #333;
+  color: #ebf1f2;
 }
 
 .project-description {
   font-size: 1.1em;
   line-height: 1.6;
-  margin-bottom: 20px;
-  color: #666;
+  margin-bottom: 40px;
+  color: #9cc9d0;
 }
 
 .social-links {
   display: flex;
-  gap: 10px; /* Space between buttons */
+  gap: 20px; /* Space between buttons */
   justify-content: center; /* Align buttons to the left */
 }
 
@@ -82,43 +92,51 @@ main {
   font-size: 1rem;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
-  border: 2px solid currentColor; /* Outline */
-  background-color: transparent; /* Transparent initially */
+  background-color: rgba(230, 48, 63, 0.5);
   transition: background-color 0.3s ease, color 0.3s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: auto;
+  border-radius: 5px;
 }
 
 .social-button i {
   margin-right: 8px;
 }
 
-.social-button.instagram {
-  border-color: #e4405f;
+.social-button:hover {
+  background-color: #e6303f;
 }
 
-.social-button.instagram:hover {
-  background-color: #e4405f;
-  color: #fff;
+.nav-arrow {
+  position: fixed;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: #9cc9d0;
+  text-decoration: none;
+  padding: 10px;
+  z-index: 1000; /* Ensure arrows are above other elements */
 }
 
-.social-button.youtube {
-  border-color: #ff0000;
+.left-arrow {
+  left: 40px; /* Position on the left side */
 }
 
-.social-button.youtube:hover {
-  background-color: #ff0000;
-  color: #fff;
+.right-arrow {
+  right: 40px; /* Position on the right side */
 }
 
-.social-button.artstation {
-  border-color: #2f2f2f;
+.nav-arrow:hover {
+  color: #005f6b; /* Change hover color for effect */
 }
 
-.social-button.artstation:hover {
-  background-color: #2f2f2f;
-  color: #fff;
+@media (max-width: 1740px) {
+  .project-details {
+    flex-direction: column;
+  }
+  .project-details iframe {
+    width: 100%;
+  }
 }

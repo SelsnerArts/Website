@@ -8,69 +8,154 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" href="/images/Favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wdth,wght@75..125,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <title>Client Work</title>
   </head>
   <body>
-    <div id="navbar"></div>
-    <!-- Placeholder for nav -->
-
-    <script>
-      fetch("/nav.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("navbar").innerHTML = data;
-        });
-    </script>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="Logo">
+        <div class="logo">
+          <img src="/images/logo_header.png" alt="My Logo" />
+        </div>
+        <div class="website-name">
+          <h1>Selsner Arts</h1>
+        </div>
+      </div>
+      <ul id="desktop-nav">
+        <li><a href="/index.html">Home</a></li>
+        <li class="dropdown">
+          <span class="nav-link"
+            >Portfolio <i class="fa-solid fa-chevron-down"></i
+          ></span>
+          <ul class="dropdown-menu">
+            <li><a href="/portfolio/client-work.html">Client Work</a></li>
+            <li>
+              <a href="/portfolio/personal-projects.html">Personal Projects</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+      <input type="checkbox" id="burger-check" />
+      <label id="burger" for="burger-check">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div id="nav-mobile">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
     <main>
       <div class="project-details">
-        <!-- Project Image -->
-        <div class="project-image">
-          <img src="/images/project-5.png" alt="Project Title" />
+        <div class="project-video">
+          <video autoplay muted loop class="showreel">
+            <source
+              src="/videos/PersonalProjects/ModularFacade.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
-
         <!-- Project Info (Title, Description, Social Media Links) -->
         <div class="project-info">
-          <h2 class="project-title">Project Title</h2>
+          <h2 class="project-title">Modular European Facade</h2>
           <p class="project-description">
-            This is a brief description of the project. You can describe what
-            the project is about and what tools you used, etc.
+            This is a showreel of my first asset pack, which includes modular
+            facade pieces that can be used to create a wide variety of building
+            combinations. <br />You can get this asset pack
+            <strong>now on FAB</strong>!
           </p>
-
           <div class="social-links">
             <a
-              href="https://www.instagram.com/your_profile"
+              href="https://www.youtube.com/watch?v=ZdXsn8Ouv8E"
               target="_blank"
-              class="social-button instagram"
-            >
-              <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a
-              href="https://www.youtube.com/your_profile"
-              target="_blank"
-              class="social-button youtube"
+              class="social-button"
             >
               <i class="fab fa-youtube"></i> YouTube
             </a>
             <a
-              href="https://www.artstation.com/your_profile"
+              href="https://www.artstation.com/artwork/1NEAyq"
               target="_blank"
-              class="social-button artstation"
+              class="social-button"
             >
-              <i class="fab fa-artstation"></i> ArtStation
+              <i class="fab fa-artstation"></i> Artstation
+            </a>
+            <a
+              href="https://www.fab.com/listings/af7ec3a0-41d2-45c5-9394-06e0400f4bd3"
+              target="_blank"
+              class="social-button"
+            >
+              <i class="fa-solid fa-store"></i> FAB
             </a>
           </div>
         </div>
       </div>
+      <a
+        href="/portfolio/personal projects/personalproject_4.html"
+        class="nav-arrow left-arrow"
+        ><i class="fa-solid fa-angle-left"></i
+      ></a>
+      <a
+        href="/portfolio/personal projects/personalproject_6.html"
+        class="nav-arrow right-arrow"
+        ><i class="fa-solid fa-angle-right"></i
+      ></a>
     </main>
-
-    <script>
-      fetch("/footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer").innerHTML = data;
-        });
-    </script>
+    <footer>
+      <div class="footer-container">
+        <div class="social-links">
+          <a
+            href="https://instagram.com/selsner_arts"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://tiktok.com/@selsner_arts"
+            target="_blank"
+            aria-label="TikTok"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a
+            href="https://pinterest.com/SelsnerArts"
+            target="_blank"
+            aria-label="Pinterest"
+          >
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@selsner"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61571482982531"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="/impressum.html" class="footer-link">Impressum</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

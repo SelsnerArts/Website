@@ -16,22 +16,6 @@ body {
   flex-direction: column;
 }
 
-body {
-  justify-content: space-between;
-}
-
-header {
-  background-color: #070b0b;
-  padding: 0px;
-  color: #ebf1f2;
-}
-
-header {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
 main {
   flex: 1; /* Makes the content area flexible to push footer down */
 }
