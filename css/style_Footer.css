@@ -1,7 +1,7 @@
 footer {
   position: absolutes;
   bottom: 0;
-  background-color: transparent;
+  background-color: #070b0b;
 }
 
 .footer-container {
@@ -15,6 +15,7 @@ footer .social-links {
   display: flex;
   gap: 40px;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 footer .social-links a {
@@ -43,13 +44,13 @@ footer .social-links a:hover {
   color: #e6303f; /* Change hover color to match your theme */
 }
 
-@media (max-width: 1080px) {
+@media (hover: none) and (pointer: coarse) {
   .footer-link {
     display: none;
   }
 
   footer {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
@@ -57,5 +58,6 @@ footer .social-links a:hover {
   }
   footer .social-links {
     padding-top: 20px;
+    flex-direction: row;
   }
 }

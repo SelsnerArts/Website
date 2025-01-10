@@ -19,6 +19,12 @@ body {
 
 main {
   flex: 1; /* Makes the content area flexible to push footer down */
+  display: flex;
+  width: fit-content;
+  max-width: 50vw;
+  align-self: center;
+  align-items: center;
+  gap: 40px;
 }
 
 p {
@@ -27,23 +33,10 @@ p {
   line-height: 2rem;
 }
 
-/* Main container */
-.about-container {
-  container-type: inline-size;
-  inline-size: 1200px;
-  align-self: center;
-  align-content: center;
-}
-
 /* About text */
 .about-text {
   line-height: 1.7; /* Line height for readability */
-  align-content: center;
-  padding: 30px;
-}
-
-.about-text p {
-  margin-bottom: 20px; /* Adds space between paragraphs */
+  align-self: center;
 }
 
 /* Image styling */
@@ -52,23 +45,11 @@ p {
   height: auto;
   object-fit: cover; /* Ensures the image doesn't get stretched */
   max-height: 100%; /* Ensures the image does not exceed the height of the text */
-  padding: 30px;
 }
 
-/* Ensuring image height matches the text height */
-.about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-}
-
-@media (max-width: 768px) {
-  /* For smaller screens, stack the content */
-  .about-container {
-    grid-template-columns: 1fr; /* Single column layout on small screens */
-  }
-
-  .about-content {
-    grid-template-columns: 1fr; /* Stack the image and text */
+@media (max-width: 1080px) {
+  main {
+    flex-direction: column;
+    max-width: 80vw;
   }
 }

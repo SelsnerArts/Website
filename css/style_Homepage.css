@@ -46,3 +46,12 @@ main {
     overflow: hidden;
   }
 }
+
+@media (orientation: landscape) {
+  main video.showreel {
+    display: flex;
+  }
+  main video.showreel-mobile {
+    display: none;
+  }
+}

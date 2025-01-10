@@ -136,11 +136,12 @@ nav ul li a:hover {
   right: 0;
   background-color: #070b0b;
   z-index: 1001;
-  padding: 120px 40px;
+  padding: 10vh 40px;
   flex-direction: column;
   align-items: end;
   gap: 1.25rem;
   font-size: 2rem;
+  overflow: scroll;
 
   a {
     color: #ebf1f2;
@@ -177,5 +178,41 @@ nav ul li a:hover {
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  #desktop-nav {
+    display: none;
+  }
+  #burger {
+    display: block;
+    z-index: 1002;
+    font-size: 2rem;
+    color: #ebf1f2;
+  }
+  #burger-check:checked ~ #nav-mobile {
+    display: flex;
+  }
+
+  .Logo .website-name {
+    display: none;
+  }
+  .Logo .logo img {
+    display: none;
+  }
+  .Logo .logo-mobile img {
+    display: flex;
+    max-width: 30vw;
+    height: auto;
+    max-height: 64px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (orientation: landscape) {
+  #nav-mobile {
+    padding: 25vh 40px;
   }
 }

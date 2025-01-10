@@ -20,7 +20,7 @@ body {
 main {
   flex: 1; /* Makes the content area flexible to push footer down */
   flex-basis: content;
-  width: 600px;
+  max-width: 30vw;
   align-self: center;
   padding-bottom: 100px;
 }
@@ -31,4 +31,10 @@ h2 {
 
 p {
   color: #9cc9d0;
+}
+
+@media (max-width: 1080px) {
+  main {
+    max-width: 80vw;
+  }
 }
