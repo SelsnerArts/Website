@@ -99,6 +99,9 @@ nav ul li a:hover {
   width: auto;
 }
 
+.Logo .logo-mobile img {
+  display: none;
+}
 .Logo .website-name h1 {
   font-family: Encode Sans Thin, sans-serif;
   font-size: 2rem; /* Adjust text size */
@@ -131,7 +134,7 @@ nav ul li a:hover {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: black;
+  background-color: #070b0b;
   z-index: 1001;
   padding: 120px 40px;
   flex-direction: column;
@@ -140,13 +143,8 @@ nav ul li a:hover {
   font-size: 2rem;
 
   a {
-    color: white;
-    transition: color 0.2s;
+    color: #ebf1f2;
     text-decoration: none;
-
-    &:hover {
-      color: gray;
-    }
   }
 }
 #burger {
@@ -160,8 +158,24 @@ nav ul li a:hover {
   #burger {
     display: block;
     z-index: 1002;
+    font-size: 2rem;
+    color: #ebf1f2;
   }
   #burger-check:checked ~ #nav-mobile {
     display: flex;
+  }
+
+  .Logo .website-name {
+    display: none;
+  }
+  .Logo .logo img {
+    display: none;
+  }
+  .Logo .logo-mobile img {
+    display: flex;
+    max-width: 30vw;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }

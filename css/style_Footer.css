@@ -42,3 +42,20 @@ footer .social-links a:hover {
 .footer-link:hover {
   color: #e6303f; /* Change hover color to match your theme */
 }
+
+@media (max-width: 1080px) {
+  .footer-link {
+    display: none;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #070b0b;
+  }
+  footer .social-links {
+    padding-top: 20px;
+  }
+}

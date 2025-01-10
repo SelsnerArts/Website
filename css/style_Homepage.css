@@ -22,6 +22,27 @@ main video.showreel {
   object-fit: cover;
 }
 
+main video.showreel-mobile {
+  display: none;
+}
+
 main {
   flex: 1; /* Makes the content area flexible to push footer down */
+}
+
+@media (max-width: 1080px) {
+  main video.showreel {
+    display: none;
+  }
+  main video.showreel-mobile {
+    display: flex;
+    max-height: 100vh;
+  }
+  main {
+    display: flex;
+    max-height: 100vh;
+    align-self: center;
+    align-items: center;
+    overflow: hidden;
+  }
 }
