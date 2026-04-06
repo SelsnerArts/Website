@@ -1,7 +1,7 @@
 footer {
   position: absolutes;
   bottom: 0;
-  background-color: #070b0b;
+  background-color: #0b0c0f;
 }
 
 .footer-container {
@@ -19,14 +19,16 @@ footer .social-links {
 }
 
 footer .social-links a {
-  color: #9cc9d0;
+  color: #b2c0e8;
   font-size: 1.8rem;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 footer .social-links a:hover {
   transform: scale(1.1); /* Slight zoom effect */
-  color: #e6303f; /* Highlight on hover, customize to your palette */
+  color: #ff9e4a; /* Highlight on hover, customize to your palette */
 }
 
 .footer-link {
@@ -34,14 +36,14 @@ footer .social-links a:hover {
   right: 25px; /* Adjust to fine-tune spacing from the edge */
   bottom: 0;
   padding-bottom: 25px;
-  color: #005f6b;
+  color: #284088;
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-  color: #e6303f; /* Change hover color to match your theme */
+  color: #ff9e4a; /* Change hover color to match your theme */
 }
 
 @media (hover: none) and (pointer: coarse) {

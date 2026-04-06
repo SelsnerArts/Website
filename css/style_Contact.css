@@ -1,7 +1,9 @@
 body {
-  font-family: Encode Sans, sans-serif;
-  background-color: #070b0b;
-  color: #ebf1f2;
+  font-family:
+    Encode Sans,
+    sans-serif;
+  background-color: #0b0c0f;
+  color: #d2dbfd;
   text-align: center;
 }
 
@@ -32,13 +34,13 @@ main {
 h2 {
   margin-bottom: 0;
   font-size: 1.8rem;
-  color: #ebf1f2;
+  color: #d2dbfd;
 }
 
 p {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: #9cc9d0;
+  color: #b2c0e8;
 }
 
 .email-link,
@@ -54,36 +56,36 @@ p {
 }
 
 .email-link {
-  background-color: rgba(0, 95, 107, 0.5);
+  background-color: rgba(40, 64, 136, 0.5);
   text-transform: uppercase;
 }
 
 .email-link:hover {
-  background-color: #005f6b;
+  background-color: #284088;
 }
 
 .commission-link {
   text-transform: uppercase;
   text-decoration-line: none;
   font-size: 1rem;
-  background-color: rgba(230, 48, 63, 0.5);
-  padding: 6px 10px;
+  background-color: rgba(255, 158, 74, 0.5);
+  padding: 12px 20px;
   margin: 5px;
   border-radius: 5px;
-  color: #ebf1f2;
+  color: #d2dbfd;
 }
 
 .commission-link:hover {
-  background-color: #e6303f;
+  background-color: #ff9e4a;
 }
 
 .support-button {
-  background-color: rgba(230, 48, 63, 0.5);
+  background-color: rgba(255, 158, 74, 0.5);
   text-transform: uppercase;
 }
 
 .support-button:hover {
-  background-color: #e6303f;
+  background-color: #ff9e4a;
 }
 
 .support-button i {

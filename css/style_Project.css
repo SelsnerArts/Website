@@ -1,7 +1,9 @@
 body {
-  font-family: Encode Sans, sans-serif;
-  background-color: #070b0b;
-  color: #ebf1f2;
+  font-family:
+    Encode Sans,
+    sans-serif;
+  background-color: #0b0c0f;
+  color: #d2dbfd;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -31,14 +33,14 @@ main {
 h2 {
   font-size: 2em;
   margin-bottom: 10px;
-  color: #ebf1f2;
+  color: #d2dbfd;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.6;
   margin-bottom: 40px;
-  color: #9cc9d0;
+  color: #b2c0e8;
 }
 
 video {
@@ -63,8 +65,10 @@ video {
   font-size: 1rem;
   color: #fff;
   text-decoration: none;
-  background-color: rgba(230, 48, 63, 0.5);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: rgba(255, 158, 74, 0.5);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -77,7 +81,7 @@ video {
 }
 
 .social-button:hover {
-  background-color: #e6303f;
+  background-color: #ff9e4a;
 }
 
 .nav-arrow a {
@@ -85,7 +89,7 @@ video {
   top: 50%; /* Center vertically */
   transform: translateY(-50%);
   font-size: 3rem;
-  color: #9cc9d0;
+  color: #b2c0e8;
   text-decoration: none;
   padding: 10px;
   z-index: 1000; /* Ensure arrows are above other elements */
@@ -100,7 +104,7 @@ video {
 }
 
 .nav-arrow:hover {
-  color: #005f6b; /* Change hover color for effect */
+  color: #284088; /* Change hover color for effect */
 }
 
 .nav-arrow-m {
@@ -140,7 +144,7 @@ video {
   }
 
   .nav-arrow-m a {
-    color: #9cc9d0;
+    color: #b2c0e8;
     text-decoration: none;
   }
 }

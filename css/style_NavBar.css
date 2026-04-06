@@ -3,7 +3,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0px 40px;
-  background-color: #070b0b;
+  background-color: #0b0c0f;
 }
 
 nav .logo img {
@@ -24,14 +24,14 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #9cc9d0;
+  color: #b2c0e8;
   font-size: 1.5rem;
   text-transform: uppercase;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #e6303f;
+  color: #ff9e4a;
 }
 
 .dropdown-menu {
@@ -56,14 +56,14 @@ nav ul li a:hover {
 .dropdown-menu li a {
   padding: 8px 15px;
   font-size: 1.5rem; /* Smaller font size to fit better */
-  color: #9cc9d0;
+  color: #b2c0e8;
   text-transform: none;
   display: inline;
 }
 
 .dropdown:hover > a,
 .dropdown:focus-within > a {
-  color: #e6303f; /* Highlight parent link when dropdown is active */
+  color: #ff9e4a; /* Highlight parent link when dropdown is active */
 }
 
 .dropdown:hover .dropdown-menu,
@@ -103,7 +103,9 @@ nav ul li a:hover {
   display: none;
 }
 .Logo .website-name h1 {
-  font-family: Encode Sans Thin, sans-serif;
+  font-family:
+    Encode Sans Thin,
+    sans-serif;
   font-size: 2rem; /* Adjust text size */
   text-transform: uppercase;
   margin: 40px; /* Removes default margin */
@@ -111,7 +113,7 @@ nav ul li a:hover {
 
 .nav-link {
   text-decoration: none;
-  color: #9cc9d0;
+  color: #b2c0e8;
   font-size: 1.5rem;
   text-transform: uppercase;
   transition: color 0.3s;
@@ -119,7 +121,7 @@ nav ul li a:hover {
 }
 
 .nav-link:hover {
-  color: #e6303f; /* Change hover color to match your style */
+  color: #ff9e4a; /* Change hover color to match your style */
 }
 
 #burger,
@@ -134,7 +136,7 @@ nav ul li a:hover {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: #070b0b;
+  background-color: #0b0c0f;
   z-index: 1001;
   padding: 10vh 40px;
   flex-direction: column;
@@ -144,7 +146,7 @@ nav ul li a:hover {
   overflow: scroll;
 
   a {
-    color: #ebf1f2;
+    color: #d2dbfd;
     text-decoration: none;
   }
 }
@@ -160,7 +162,7 @@ nav ul li a:hover {
     display: block;
     z-index: 1002;
     font-size: 2rem;
-    color: #ebf1f2;
+    color: #d2dbfd;
   }
   #burger-check:checked ~ #nav-mobile {
     display: flex;
@@ -189,7 +191,7 @@ nav ul li a:hover {
     display: block;
     z-index: 1002;
     font-size: 2rem;
-    color: #ebf1f2;
+    color: #d2dbfd;
   }
   #burger-check:checked ~ #nav-mobile {
     display: flex;
