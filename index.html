@@ -91,14 +91,26 @@
       </nav>
     </header>
     <main>
-      <video autoplay muted loop class="showreel">
-        <source src="/videos/Showreel.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <video autoplay muted loop class="showreel-mobile">
-        <source src="/videos/showreel-mobile.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <section class="homepage-carousel" aria-label="Selected portfolio projects" aria-roledescription="carousel">
+        <div class="carousel-images">
+          <img class="carousel-image is-active" src="/images/Homepage/kitsune-forest.png" alt="Kitsune Forest" fetchpriority="high"  />
+          <img class="carousel-image" src="/images/Homepage/mist-creeper.png" alt="Mist Creeper" loading="lazy" aria-hidden="true" />
+          <img class="carousel-image" src="/images/Homepage/lindon.png" alt="Lindon" loading="lazy" aria-hidden="true" />
+          <img class="carousel-image" src="/images/Homepage/modular-european-facade.jpeg" alt="Modular European Facade" loading="lazy" aria-hidden="true" />
+        </div>
+        <div class="carousel-caption">
+          <p class="carousel-eyebrow">3D environments &amp; stylized visuals</p>
+          <h2 id="carousel-title">Kitsune Forest</h2>
+          <a id="carousel-project" href="/portfolio/personal%20projects/personalproject_1.html">Explore project <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="carousel-controls">
+          <button type="button" id="carousel-prev" aria-label="Previous project">‹</button>
+          <span id="carousel-count" aria-live="off">1 / 4</span>
+          <button type="button" id="carousel-next" aria-label="Next project">›</button>
+          <button type="button" id="carousel-pause" aria-label="Pause slideshow">Pause</button>
+        </div>
+      </section>
+      <script src="/js/homepage-carousel.js" defer></script>
     </main>
     <footer>
       <div class="footer-container">
