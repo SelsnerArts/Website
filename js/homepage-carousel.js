@@ -23,7 +23,7 @@
     });
     const project = projects[index];
     document.getElementById('carousel-title').textContent = project.title;
-    document.getElementById('carousel-project').href = '/portfolio/personal%20projects/personalproject_' + project.id + '.html';
+    document.getElementById('carousel-project').href = (german ? '/de' : '') + '/portfolio/personal%20projects/personalproject_' + project.id + '.html';
     document.getElementById('carousel-count').textContent = (index + 1) + ' / ' + images.length;
   }
   function schedule() {
