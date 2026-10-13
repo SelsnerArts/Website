@@ -1,5 +1,5 @@
 footer {
-  position: absolutes;
+  position: static;
   bottom: 0;
   background-color: #0b0c0f;
 }
@@ -46,10 +46,26 @@ footer .social-links a:hover {
   color: #ff9e4a; /* Change hover color to match your theme */
 }
 
-@media (hover: none) and (pointer: coarse) {
-  .footer-link {
-    display: none;
+@media (max-width: 1080px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 0 16px 20px;
   }
+
+  footer .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(20px, 6vw, 40px);
+  }
+
+  .footer-link {
+    position: static;
+    display: inline-block;
+    padding-bottom: 0;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
 
   footer {
     position: sticky;
