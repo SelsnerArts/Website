@@ -79,14 +79,31 @@ nav ul li a:hover {
   align-items: center; /* Vertically centers items */
 }
 
-.dropdown span i {
-  margin-left: 5px; /* Space between text and icon */
-  font-size: 0.9em;
-  transition: transform 0.2s ease-in-out; /* Smoother transition */
+.dropdown > .nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.dropdown:hover span i {
-  transform: rotate(180deg); /* Flip effect */
+.dropdown span i {
+  display: inline-block;
+  width: 0.45em;
+  height: 0.45em;
+  box-sizing: border-box;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  font-size: inherit;
+  transform: translateY(-0.12em) rotate(45deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.dropdown span i::before {
+  content: none;
+}
+
+.dropdown:hover span i,
+.dropdown:focus-within span i {
+  transform: translateY(0.12em) rotate(225deg);
 }
 
 .Logo {
