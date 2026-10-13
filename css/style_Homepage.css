@@ -28,7 +28,7 @@ main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
 .carousel-caption a { color: #ebecee; text-decoration: none; border-bottom: 1px solid #b2c0e8; padding: 6px 0; display: inline-block; }
 .carousel-caption a:hover { color: #ff9e4a; }
 .carousel-controls { position: absolute; z-index: 2; right: clamp(24px, 4vw, 80px); bottom: 24px; display: flex; align-items: center; gap: 12px; }
-.carousel-controls button { min-width: 44px; min-height: 44px; border: 1px solid #b2c0e8; border-radius: 50%; background: rgba(11,12,15,.7); color: #ebecee; cursor: pointer; font: inherit; }
+.carousel-controls button { min-width: 44px; min-height: 44px; border: 1px solid #284088; border-radius: 50%; background: rgba(11,12,15,.7); color: #284088; cursor: pointer; font: inherit; }
 .carousel-controls button:hover { border-color: #ff9e4a; color: #ff9e4a; }
 #carousel-prev, #carousel-next {
   position: relative;
@@ -49,7 +49,7 @@ main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
 #carousel-prev::before { transform: translate(-50%, -50%) translateX(1.06px) rotate(-135deg); }
 #carousel-next::before { transform: translate(-50%, -50%) translateX(-1.06px) rotate(45deg); }
 #carousel-pause { border-radius: 24px; padding: 0 16px; }
-#carousel-count { font-size: .8rem; color: #b2c0e8; }
+#carousel-count { font-size: .8rem; color: #284088; }
 .homepage-carousel :focus-visible { outline: 2px solid #ff9e4a; outline-offset: 5px; }
 @media (max-width: 600px) {
   .homepage-carousel { min-height: 520px; height: 72svh; max-height: 800px; }
