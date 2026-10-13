@@ -8,6 +8,7 @@
     { title: 'Lindon', id: 3 },
     { title: 'Modular European Facade', id: 5 }
   ];
+  const german = document.documentElement.lang === 'de';
   const pause = document.getElementById('carousel-pause');
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let index = 0;
@@ -30,8 +31,8 @@
     if (!paused && !document.hidden && !carousel.matches(':hover') && !carousel.contains(document.activeElement)) {
       timer = setInterval(() => show(index + 1), 6000);
     }
-    pause.textContent = paused ? 'Play' : 'Pause';
-    pause.setAttribute('aria-label', paused ? 'Start slideshow' : 'Pause slideshow');
+    pause.textContent = paused ? (german ? 'Start' : 'Play') : 'Pause';
+    pause.setAttribute('aria-label', paused ? (german ? 'Diashow starten' : 'Start slideshow') : (german ? 'Diashow pausieren' : 'Pause slideshow'));
   }
   document.getElementById('carousel-prev').addEventListener('click', () => { show(index - 1); schedule(); });
   document.getElementById('carousel-next').addEventListener('click', () => { show(index + 1); schedule(); });

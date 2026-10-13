@@ -90,3 +90,18 @@ footer .social-links a:hover {
     flex-direction: row;
   }
 }
+
+.footer-language {
+  position: absolute; left: 25px; top: 50%; transform: translateY(-50%);
+  display: flex; gap: 6px; padding: 0; background: transparent;
+  font-size: .95rem; color: #284088;
+}
+.footer-language a { color: #284088; text-decoration: none; padding: 8px 0; }
+.footer-language a[aria-current="page"] { color: #b2c0e8; }
+.footer-language a:hover { color: #ff9e4a; }
+.footer-language a:focus-visible { outline: 2px solid #ff9e4a; outline-offset: 4px; }
+.footer-language span { padding: 8px 0; }
+@media (max-width: 1080px) {
+  .footer-container { flex-wrap: wrap; gap: 20px; }
+  .footer-language { position: static; transform: none; }
+}

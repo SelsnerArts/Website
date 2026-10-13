@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <link rel="stylesheet" href="/css/style_Homepage.css" />
+    <link rel="stylesheet" href="/css/style_NavBar.css" />
+    <link rel="stylesheet" href="/css/style_Footer.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/images/Favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wdth,wght@75..125,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selsner Arts</title>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-17K6TPPX0Y"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-17K6TPPX0Y");
+    </script>
+  <link rel="alternate" hreflang="en" href="https://selsnerarts.com/index.html" />
+    <link rel="alternate" hreflang="de" href="https://selsnerarts.com/de/index.html" />
+    <link rel="alternate" hreflang="x-default" href="https://selsnerarts.com/index.html" />
+  </head>
+  <body>
+    <header>
+      <!-- Navigation Bar -->
+      <nav>
+        <div class="Logo">
+          <div class="logo">
+            <a href="/de/index.html" class="home-link" aria-label="Selsner Arts – Startseite">
+            <img src="/images/logo_header.png" alt="My Logo" />
+          
+            </a>
+          </div>
+          <div class="website-name">
+            <a href="/de/index.html" class="home-link">
+            <h1>Selsner Arts</h1>
+          
+            </a>
+          </div>
+          <div class="logo-mobile">
+            <a href="/de/index.html" class="home-link" aria-label="Selsner Arts – Startseite">
+            <img src="/images/logo_mobile.png" alt="My Logo" />
+          
+            </a>
+          </div>
+        </div>
+        <ul id="desktop-nav">
+          <li><a href="/de/index.html">Startseite</a></li>
+          <li class="dropdown">
+            <span class="nav-link"
+              >Portfolio <i class="fa-solid fa-chevron-down"></i
+            ></span>
+            <ul class="dropdown-menu">
+              <li><a href="/portfolio/client-work.html">Kundenprojekte (EN)</a></li>
+              <li>
+                <a href="/portfolio/personal-projects.html"
+                  >Eigene Projekte (EN)</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="/de/about.html">Über mich</a></li>
+          <li><a href="/de/contact.html">Kontakt</a></li>
+        </ul>
+        <input type="checkbox" id="burger-check" />
+        <label id="burger" for="burger-check">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <div id="nav-mobile">
+          <a href="/de/index.html">Startseite</a>
+          <a href="/portfolio/client-work.html">Kundenprojekte (EN)</a>
+          <a href="/portfolio/personal-projects.html">Eigene Projekte (EN)</a>
+          <a href="/de/about.html">Über mich</a>
+          <a href="/de/contact.html">Kontakt</a>
+          <a href="https://linktr.ee/Selsner_Arts" target="_blank" rel="noopener noreferrer">Socials</a>
+          <a href="/impressum.html">Impressum</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="homepage-carousel" aria-label="Ausgewählte Portfolio-Projekte" aria-roledescription="Karussell">
+        <div class="carousel-images">
+          <img class="carousel-image is-active" src="/images/Homepage/kitsune-forest.png" alt="Kitsune Forest" fetchpriority="high"  />
+          <img class="carousel-image" src="/images/Homepage/mist-creeper.png" alt="Mist Creeper" loading="lazy" aria-hidden="true" />
+          <img class="carousel-image" src="/images/Homepage/lindon.png" alt="Lindon" loading="lazy" aria-hidden="true" />
+          <img class="carousel-image" src="/images/Homepage/modular-european-facade.jpeg" alt="Modular European Facade" loading="lazy" aria-hidden="true" />
+        </div>
+        <div class="carousel-caption">
+          <p class="carousel-eyebrow">3D-Umgebungen &amp; stilisierte Visuals</p>
+          <h2 id="carousel-title">Kitsune Forest</h2>
+          <a id="carousel-project" href="/portfolio/personal%20projects/personalproject_1.html">Projekt ansehen (EN) <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </div>
+        <div class="carousel-controls">
+          <button type="button" id="carousel-prev" aria-label="Vorheriges Projekt"></button>
+          <span id="carousel-count" aria-live="off">1 / 4</span>
+          <button type="button" id="carousel-next" aria-label="Nächstes Projekt"></button>
+          <button type="button" id="carousel-pause" aria-label="Diashow pausieren">Pause</button>
+        </div>
+      </section>
+      <script src="/js/homepage-carousel.js" defer></script>
+      <section class="homepage-intro" aria-labelledby="intro-title">
+        <div class="intro-heading">
+          <h2 id="intro-title">Atmosphärische Welten.<br>Liebe zum Detail.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>Ich bin Sophie und gestalte als 3D-Künstlerin stilisierte Umgebungen, Animationen und digitale Assets. Mein Hintergrund in der Architektur prägt meine Liebe zu Struktur, Licht und Geschichten – und fließt in jedes Projekt ein.</p>
+          <a class="intro-contact" href="/de/contact.html">Du hast eine Projektidee? Lass uns reden <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <nav class="footer-language" aria-label="Sprache auswählen"><a href="/de/index.html" lang="de" hreflang="de" aria-current="page">DE</a><span aria-hidden="true"> / </span><a href="/index.html" lang="en" hreflang="en">ENG</a></nav>
+        <a href="https://linktr.ee/Selsner_Arts" class="mobile-socials" target="_blank" rel="noopener noreferrer">Socials</a>
+        <div class="social-links">
+          <a
+            href="https://instagram.com/selsner_arts"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://tiktok.com/@selsner_arts"
+            target="_blank"
+            aria-label="TikTok"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@selsner"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="/impressum.html" class="footer-link">Impressum</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
