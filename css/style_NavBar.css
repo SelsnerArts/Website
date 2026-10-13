@@ -143,13 +143,19 @@ nav ul li a:hover {
   align-items: end;
   gap: 1.25rem;
   font-size: 2rem;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
 
   a {
     color: #d2dbfd;
     text-decoration: none;
   }
 }
+#nav-mobile::-webkit-scrollbar {
+  display: none;
+}
+
 #burger {
   cursor: pointer;
 }
