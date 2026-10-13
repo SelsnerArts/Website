@@ -124,7 +124,8 @@ nav ul li a:hover {
 .Logo .website-name h1 {
   font-family: "Oregano", cursive;
   font-weight: 400;
-  font-size: 2rem; /* Adjust text size */
+  font-size: 3rem;
+  color: #b2c0e8; /* Adjust text size */
   text-transform: none;
   margin: 40px; /* Removes default margin */
 }
