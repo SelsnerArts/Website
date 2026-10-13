@@ -57,3 +57,46 @@ main { flex: 1; min-width: 0; }
   .carousel-controls { left: 24px; right: auto; }
 }
 @media (prefers-reduced-motion: reduce) { .carousel-image { transition: none; } }
+.homepage-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 6vw, 96px);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(56px, 7vw, 104px) clamp(24px, 6vw, 72px);
+  text-align: left;
+}
+.intro-eyebrow {
+  margin: 0 0 20px;
+  color: #b2c0e8;
+  font-size: .75rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.intro-heading h2 {
+  margin: 0;
+  color: #b2c0e8;
+  font-size: clamp(2rem, 3.5vw, 3.25rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+.intro-copy { align-self: center; }
+.intro-copy p {
+  margin: 0 0 24px;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #ebecee;
+}
+.intro-contact {
+  display: inline-block;
+  padding: 8px 0;
+  color: #ff9e4a;
+  text-decoration: none;
+  border-bottom: 1px solid #ff9e4a;
+  line-height: 1.6;
+}
+.intro-contact:hover { color: #ebecee; border-color: #ebecee; }
+.intro-contact:focus-visible { outline: 2px solid #ff9e4a; outline-offset: 6px; }
+@media (max-width: 760px) {
+  .homepage-intro { grid-template-columns: 1fr; gap: 28px; }
+}
