@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oregano&display=swap");
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -103,11 +105,10 @@ nav ul li a:hover {
   display: none;
 }
 .Logo .website-name h1 {
-  font-family:
-    Encode Sans Thin,
-    sans-serif;
+  font-family: "Oregano", cursive;
+  font-weight: 400;
   font-size: 2rem; /* Adjust text size */
-  text-transform: uppercase;
+  text-transform: none;
   margin: 40px; /* Removes default margin */
 }
 
