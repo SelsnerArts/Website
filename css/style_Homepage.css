@@ -30,21 +30,23 @@ main { flex: 1; min-width: 0; }
 .carousel-controls button { min-width: 44px; min-height: 44px; border: 1px solid #b2c0e8; border-radius: 50%; background: rgba(11,12,15,.7); color: #ebecee; cursor: pointer; font: inherit; }
 .carousel-controls button:hover { border-color: #ff9e4a; color: #ff9e4a; }
 #carousel-prev, #carousel-next {
-  display: grid;
-  place-items: center;
+  position: relative;
   padding: 0;
   font-size: 0;
 }
 #carousel-prev::before, #carousel-next::before {
   content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 9px;
   height: 9px;
   box-sizing: border-box;
   border-top: 1.5px solid currentColor;
   border-right: 1.5px solid currentColor;
 }
-#carousel-prev::before { transform: translateX(2px) rotate(-135deg); }
-#carousel-next::before { transform: translateX(-2px) rotate(45deg); }
+#carousel-prev::before { transform: translate(-50%, -50%) translateX(1.06px) rotate(-135deg); }
+#carousel-next::before { transform: translate(-50%, -50%) translateX(-1.06px) rotate(45deg); }
 #carousel-pause { border-radius: 24px; padding: 0 16px; }
 #carousel-count { font-size: .8rem; color: #b2c0e8; }
 .homepage-carousel :focus-visible { outline: 2px solid #ff9e4a; outline-offset: 5px; }
