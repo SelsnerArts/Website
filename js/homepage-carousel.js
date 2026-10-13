@@ -9,7 +9,6 @@
     { title: 'Modular European Facade', id: 5 }
   ];
   const german = document.documentElement.lang === 'de';
-  const pause = document.getElementById('carousel-pause');
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let index = 0;
   let paused = motion.matches;
@@ -31,12 +30,9 @@
     if (!paused && !document.hidden && !carousel.matches(':hover') && !carousel.contains(document.activeElement)) {
       timer = setInterval(() => show(index + 1), 6000);
     }
-    pause.textContent = paused ? (german ? 'Start' : 'Play') : 'Pause';
-    pause.setAttribute('aria-label', paused ? (german ? 'Diashow starten' : 'Start slideshow') : (german ? 'Diashow pausieren' : 'Pause slideshow'));
   }
   document.getElementById('carousel-prev').addEventListener('click', () => { show(index - 1); schedule(); });
   document.getElementById('carousel-next').addEventListener('click', () => { show(index + 1); schedule(); });
-  pause.addEventListener('click', () => { paused = !paused; schedule(); });
   carousel.addEventListener('mouseenter', schedule);
   carousel.addEventListener('mouseleave', schedule);
   carousel.addEventListener('focusin', schedule);
