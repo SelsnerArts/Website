@@ -9,8 +9,8 @@ body { min-height: 100vh; display: flex; flex-direction: column; }
 main { flex: 1; min-width: 0; }
 .homepage-carousel {
   position: relative;
-  min-height: 480px;
-  height: min(74vh, 850px);
+  min-height: 340px;
+  height: min(56vh, 650px);
   overflow: hidden;
   background: #0b0c0f;
 }
@@ -51,7 +51,7 @@ main { flex: 1; min-width: 0; }
 #carousel-count { font-size: .8rem; color: #b2c0e8; }
 .homepage-carousel :focus-visible { outline: 2px solid #ff9e4a; outline-offset: 5px; }
 @media (max-width: 600px) {
-  .homepage-carousel { min-height: 520px; height: 72svh; max-height: 800px; }
+  .homepage-carousel { min-height: 380px; height: 56svh; max-height: 600px; }
   .carousel-caption { bottom: 108px; }
   .carousel-eyebrow { font-size: .7rem; letter-spacing: .08em; }
   .carousel-controls { left: 24px; right: auto; }
@@ -63,15 +63,8 @@ main { flex: 1; min-width: 0; }
   gap: clamp(32px, 6vw, 96px);
   max-width: 1200px;
   margin: 0 auto;
-  padding: clamp(56px, 7vw, 104px) clamp(24px, 6vw, 72px);
+  padding: 28px clamp(24px, 6vw, 72px);
   text-align: left;
-}
-.intro-eyebrow {
-  margin: 0 0 20px;
-  color: #b2c0e8;
-  font-size: .75rem;
-  letter-spacing: .14em;
-  text-transform: uppercase;
 }
 .intro-heading h2 {
   margin: 0;
@@ -100,3 +93,5 @@ main { flex: 1; min-width: 0; }
 @media (max-width: 760px) {
   .homepage-intro { grid-template-columns: 1fr; gap: 28px; }
 }
+
+.carousel-caption a i, .intro-contact i { margin-left: 6px; font-size: .85em; }
