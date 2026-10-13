@@ -42,20 +42,31 @@ footer .social-links a:hover {
   transition: color 0.3s ease;
 }
 
-.footer-link:hover {
+.mobile-socials {
+  display: none;
+  color: #284088;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover,
+.mobile-socials:hover {
   color: #ff9e4a; /* Change hover color to match your theme */
 }
 
 @media (max-width: 1080px) {
   .footer-container {
-    flex-direction: column;
-    padding: 0 16px 20px;
+    gap: 32px;
+    padding: 20px 16px;
   }
 
   footer .social-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: clamp(20px, 6vw, 40px);
+    display: none;
+  }
+
+  .mobile-socials {
+    display: inline-block;
   }
 
   .footer-link {
