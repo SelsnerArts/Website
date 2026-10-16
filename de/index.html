@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <link rel="stylesheet" href="/css/style_Homepage.css" />
-    <link rel="stylesheet" href="/css/style_NavBar.css" />
-    <link rel="stylesheet" href="/css/style_Footer.css" />
+    
+    
+    
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
@@ -32,10 +32,11 @@
 
       gtag("config", "G-17K6TPPX0Y");
     </script>
-  <link rel="alternate" hreflang="en" href="https://selsnerarts.com/index.html" />
-    <link rel="alternate" hreflang="de" href="https://selsnerarts.com/de/index.html" />
-    <link rel="alternate" hreflang="x-default" href="https://selsnerarts.com/index.html" />
-  </head>
+  
+    
+    
+  <link rel="stylesheet" href="/css/portfolio-5bab17c807b1.css" />
+<link rel="canonical" href="https://selsnerarts.com/de/index.html" /><link rel="alternate" hreflang="de" href="https://selsnerarts.com/de/index.html" /><link rel="alternate" hreflang="en" href="https://selsnerarts.com/index.html" /><link rel="alternate" hreflang="x-default" href="https://selsnerarts.com/index.html" /></head>
   <body>
     <header>
       <!-- Navigation Bar -->
@@ -70,7 +71,7 @@
               <li><a href="/de/portfolio/client-work.html">Kundenprojekte</a></li>
               <li>
                 <a href="/de/portfolio/personal-projects.html"
-                  >Eigene Projekte</a
+                  >Persönliche Projekte</a
                 >
               </li>
             </ul>
@@ -85,7 +86,7 @@
         <div id="nav-mobile">
           <a href="/de/index.html">Startseite</a>
           <a href="/de/portfolio/client-work.html">Kundenprojekte</a>
-          <a href="/de/portfolio/personal-projects.html">Eigene Projekte</a>
+          <a href="/de/portfolio/personal-projects.html">Persönliche Projekte</a>
           <a href="/de/about.html">Über mich</a>
           <a href="/de/contact.html">Kontakt</a>
           <a href="https://linktr.ee/Selsner_Arts" target="_blank" rel="noopener noreferrer">Socials</a>
@@ -95,24 +96,65 @@
     </header>
     <main>
       <section class="homepage-carousel" aria-label="Ausgewählte Portfolio-Projekte" aria-roledescription="Karussell">
-        <div class="carousel-images">
-          <img class="carousel-image is-active" src="/images/Homepage/kitsune-forest.png" alt="Kitsune Forest" fetchpriority="high"  />
-          <img class="carousel-image" src="/images/Homepage/mist-creeper.png" alt="Mist Creeper" loading="lazy" aria-hidden="true" />
-          <img class="carousel-image" src="/images/Homepage/lindon.png" alt="Lindon" loading="lazy" aria-hidden="true" />
-          <img class="carousel-image" src="/images/Homepage/modular-european-facade.jpeg" alt="Modular European Facade" loading="lazy" aria-hidden="true" />
-        </div>
+        <div class="carousel-images"><img class="carousel-image is-active" src="/images/Portfolio/fragments.jpg" alt="Fragments" fetchpriority="high" />
+<img class="carousel-image" src="/images/Portfolio/galaxie-gera-erlebnisbereich.jpg" alt="Veranstaltungsort Planungskonzept" loading="lazy" aria-hidden="true" />
+<img class="carousel-image" src="/images/Personal_Projects/project-5.jpeg" alt="Modular European Facade" loading="lazy" aria-hidden="true" />
+<img class="carousel-image" src="/images/Portfolio/last-goodbye.jpg" alt="The Last Goodbye – Lichtstudie" loading="lazy" aria-hidden="true" />
+<img class="carousel-image" src="/images/Portfolio/grimma-thumbnail-neu.jpg" alt="Nutzungskonzept Alte Kaffeerösterei" loading="lazy" aria-hidden="true" /></div>
         <div class="carousel-caption">
           <p class="carousel-eyebrow">3D-Umgebungen &amp; stilisierte Visuals</p>
-          <h2 id="carousel-title">Kitsune Forest</h2>
-          <a id="carousel-project" href="/de/portfolio/personal%20projects/personalproject_1.html">Projekt ansehen <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          <h2 id="carousel-title">Fragments</h2>
+          <a id="carousel-project" href="/de/portfolio/personal%20projects/fragments.html">Projekt ansehen <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
         </div>
         <div class="carousel-controls">
           <button type="button" id="carousel-prev" aria-label="Vorheriges Projekt"></button>
-          <span id="carousel-count" aria-live="off">1 / 4</span>
+          <span id="carousel-count" aria-live="off">1 / 5</span>
           <button type="button" id="carousel-next" aria-label="Nächstes Projekt"></button>
         </div>
       </section>
-      <script src="/js/homepage-carousel.js" defer></script>
+      <script>(() => {
+  const carousel = document.querySelector('.homepage-carousel');
+  if (!carousel) return;
+  const images = Array.from(carousel.querySelectorAll('.carousel-image'));
+  const projects = [{"title":"Fragments","href":"/de/portfolio/personal%20projects/fragments.html","img":"/images/Portfolio/fragments.jpg"},{"title":"Veranstaltungsort Planungskonzept","href":"/de/portfolio/client%20work/galaxie-gera.html","img":"/images/Portfolio/galaxie-gera-erlebnisbereich.jpg"},{"title":"Modular European Facade","href":"/de/portfolio/personal%20projects/personalproject_5.html","img":"/images/Personal_Projects/project-5.jpeg"},{"title":"The Last Goodbye – Lichtstudie","href":"/de/portfolio/personal%20projects/last-goodbye.html","img":"/images/Portfolio/last-goodbye.jpg"},{"title":"Nutzungskonzept Alte Kaffeerösterei","href":"/de/portfolio/client%20work/grimma.html","img":"/images/Portfolio/grimma-thumbnail-neu.jpg"}];
+  const german = document.documentElement.lang === 'de';
+  const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let index = 0;
+  let paused = motion.matches;
+  let timer;
+  function show(next) {
+    index = (next + images.length) % images.length;
+    images.forEach((image, i) => {
+      image.classList.toggle('is-active', i === index);
+      image.setAttribute('aria-hidden', String(i !== index));
+      if (i === index) image.loading = 'eager';
+    });
+    const project = projects[index];
+    document.getElementById('carousel-title').textContent = project.title;
+    document.getElementById('carousel-project').href = project.href;
+    document.getElementById('carousel-count').textContent = (index + 1) + ' / ' + images.length;
+  }
+  function schedule() {
+    clearInterval(timer);
+    if (!paused && !document.hidden && !carousel.matches(':hover') && !carousel.contains(document.activeElement)) {
+      timer = setInterval(() => show(index + 1), 6000);
+    }
+  }
+  document.getElementById('carousel-prev').addEventListener('click', () => { show(index - 1); schedule(); });
+  document.getElementById('carousel-next').addEventListener('click', () => { show(index + 1); schedule(); });
+  carousel.addEventListener('mouseenter', schedule);
+  carousel.addEventListener('mouseleave', schedule);
+  carousel.addEventListener('focusin', schedule);
+  carousel.addEventListener('focusout', () => setTimeout(schedule, 0));
+  carousel.addEventListener('keydown', event => {
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault(); show(index + (event.key === 'ArrowLeft' ? -1 : 1)); schedule();
+    }
+  });
+  document.addEventListener('visibilitychange', schedule);
+  motion.addEventListener('change', () => { if (motion.matches) paused = true; schedule(); });
+  schedule();
+})();</script>
       <section class="homepage-intro" aria-labelledby="intro-title">
         <div class="intro-heading">
           <h2 id="intro-title">Atmosphärische Welten.<br>Liebe zum Detail.</h2>
@@ -149,9 +191,7 @@
           >
             <i class="fa-brands fa-youtube"></i>
           </a>
-        
-          <a href="https://www.patreon.com/cw/Selsner_Arts" target="_blank" rel="noopener noreferrer" aria-label="Patreon" title="Patreon"><i class="fa-brands fa-patreon"></i></a>
-</div>
+        <a href="https://www.patreon.com/cw/Selsner_Arts" target="_blank" rel="noopener noreferrer" aria-label="Patreon" title="Patreon"><i class="fa-brands fa-patreon"></i></a></div>
         <div class="footer-links">
           <a href="/impressum.html" class="footer-link">Impressum</a>
         </div>
@@ -159,3 +199,8 @@
     </footer>
   </body>
 </html>
+
+
+
+
+
