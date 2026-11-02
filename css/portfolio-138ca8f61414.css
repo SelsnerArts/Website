@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Oregano&display=swap");
 body {
   font-family: 'Encode Sans', sans-serif;
   background: #0b0c0f;
@@ -40,8 +41,6 @@ main { flex: 1; min-width: 0; }
   .carousel-controls { left: 24px; right: auto; }
 }
 @media (prefers-reduced-motion: reduce) { .carousel-image { transition: none; } }
-@import url("https://fonts.googleapis.com/css2?family=Oregano&display=swap");
-
 nav {
   display: flex;
   justify-content: space-between;
